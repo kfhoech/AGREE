@@ -121,6 +121,8 @@
 						</goals>
 						<configuration>
 							<excludes>
+								<feature id="com.collins.trustedsystems.jkind.feature" />
+								<feature id="com.collins.trustedsystems.jkindapi.feature" />
 								<feature id="com.collins.trustedsystems.z3.feature" />
 							</excludes>
 						</configuration>
@@ -383,6 +385,11 @@
 		<repository>
 			<id>xtext-testing</id>
 			<url>${xtext-testing.repo.url}</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>jkind-plugin</id>
+			<url>https://raw.githubusercontent.com/loonwerks/jkind-plugin/master/compositeRepository/</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>

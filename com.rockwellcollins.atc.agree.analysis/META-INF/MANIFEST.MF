@@ -18,12 +18,11 @@ Require-Bundle: org.eclipse.ui,
  com.rockwellcollins.atc.agree.ui;bundle-version="1.0.0",
  org.osate.ge,
  org.eclipse.emf.ecore,
+ com.collins.trustedsystems.jkindapi;bundle-version"[4.0.0,5.0.0)";visibility:=reexport
  com.collins.trustedsystems.z3
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .,
- dependencies/jkind-api.jar,
- dependencies/jxl.jar,
  dependencies/antlr-runtime-4.4.jar,
  dependencies/gson-2.8.5.jar
 Import-Package: 
@@ -39,17 +38,5 @@ Export-Package: com.rockwellcollins.atc.agree.analysis,
  com.rockwellcollins.atc.agree.analysis.preferences,
  com.rockwellcollins.atc.agree.analysis.saving,
  com.rockwellcollins.atc.agree.analysis.translation,
- com.rockwellcollins.atc.agree.analysis.views,
- jkind,
- jkind.api,
- jkind.api.results,
- jkind.api.ui.results,
- jkind.lustre,
- jkind.lustre.builders,
- jkind.lustre.values,
- jkind.lustre.visitors,
- jkind.results,
- jkind.results.layout,
- jkind.translation,
- jkind.util
+ com.rockwellcollins.atc.agree.analysis.views
 Automatic-Module-Name: com.rockwellcollins.atc.agree.analysis
